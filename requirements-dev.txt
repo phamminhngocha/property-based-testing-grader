@@ -1,0 +1,11 @@
+# Development dependencies - install with: pip install -r requirements-dev.txt
+
+-r requirements.txt  # Include base requirements
+
+# Additional development tools
+ipython>=8.18.0
+jupyter>=1.0.0
+notebook>=7.0.0
+pytest-xdist>=3.5.0  # Parallel test execution
+pytest-benchmark>=4.0.0  # Performance benchmarking
+coverage[toml]>=7.4.0  # Enhanced coverage reporting
