@@ -430,7 +430,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Pham Minh Ngoc Ha**
 
 - Institution: Academy of Finance (Học viện Tài chính)
-- Email: phammingngocha@hvtc.edu.vn
+- Email:phamminhngocha@hvtc.edu.vn
 - GitHub: [@phamminhngocha]
 
 ## 🙏 Acknowledgments
@@ -443,7 +443,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, issues, or collaboration inquiries:
 
-- **Email**: phammingngocha@hvtc.edu.vn
+- **Email**:phamminhngocha@hvtc.edu.vn
 - **Issues**: [GitHub Issues](https://github.com/phamminhngocha/python-auto-grader-pbt/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/phamminhngocha/python-auto-grader-pbt/discussions)
 
