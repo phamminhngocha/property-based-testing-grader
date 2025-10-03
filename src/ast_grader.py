@@ -404,20 +404,21 @@ class ASTGrader:
         }
 
 
-# Ví dụ sử dụng
-if __name__ == "__main__":
-    grader = ASTGrader("student_code.py")
-    
-    structure_req = {
-        'functions': 3,
-        'classes': 1,
-        'loops': 2
-    }
-    
-    result = grader.grade(structure_requirements=structure_req)
-    print(f"Điểm: {result['score']}/10")
-    
-    for category, details in result['results'].items():
-        print(f"\n{category.upper()}: {details['score']:.1f}/10")
-        if not details['passed']:
-            print(f"  Violations: {details.get('violations', [])}")
+### Thử nghiệm
+##if __name__ == "__main__":
+##    grader = ASTGrader("student_code.py")
+##    
+##    structure_req = {
+##        'functions': 3,
+##        'classes': 1,
+##        'loops': 2
+##    }
+##    
+##    result = grader.grade(structure_requirements=structure_req)
+##    print(f"Điểm: {result['score']}/10")
+##    
+##    for category, details in result['results'].items():
+##        print(f"\n{category.upper()}: {details['score']:.1f}/10")
+##        if not details['passed']:
+##            print(f"  Violations: {details.get('violations', [])}")
+##

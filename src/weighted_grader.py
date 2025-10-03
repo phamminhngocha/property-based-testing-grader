@@ -158,30 +158,30 @@ class WeightedGrader:
         
         return "\n".join(report)
 
-
-# Ví dụ sử dụng
-if __name__ == "__main__":
-    # Định nghĩa các test functions
-    def test_basic_add(module):
-        assert module.add(2, 3) == 5, "add(2,3) should be 5"
-        assert module.add(0, 0) == 0, "add(0,0) should be 0"
-    
-    def test_negative_add(module):
-        assert module.add(-1, 1) == 0, "add(-1,1) should be 0"
-        assert module.add(-5, -3) == -8, "add(-5,-3) should be -8"
-    
-    def test_edge_cases(module):
-        assert module.add(1000000, 1) == 1000001
-        assert module.add(-1000000, 1000000) == 0
-    
-    # Khởi tạo grader
-    grader = WeightedGrader("student_code.py")
-    
-    # Thêm các nhóm test với trọng số
-    grader.add_test_group("Basic Tests", [test_basic_add], weight=0.3)
-    grader.add_test_group("Negative Numbers", [test_negative_add], weight=0.3)
-    grader.add_test_group("Edge Cases", [test_edge_cases], weight=0.4)
-    
-    # Chấm điểm
-    result = grader.grade()
-    print(grader.generate_report(result))
+### Thử nghiệm
+##if __name__ == "__main__":
+##    # Định nghĩa các test functions
+##    def test_basic_add(module):
+##        assert module.add(2, 3) == 5, "add(2,3) should be 5"
+##        assert module.add(0, 0) == 0, "add(0,0) should be 0"
+##    
+##    def test_negative_add(module):
+##        assert module.add(-1, 1) == 0, "add(-1,1) should be 0"
+##        assert module.add(-5, -3) == -8, "add(-5,-3) should be -8"
+##    
+##    def test_edge_cases(module):
+##        assert module.add(1000000, 1) == 1000001
+##        assert module.add(-1000000, 1000000) == 0
+##    
+##    # Khởi tạo grader
+##    grader = WeightedGrader("student_code.py")
+##    
+##    # Thêm các nhóm test với trọng số
+##    grader.add_test_group("Basic Tests", [test_basic_add], weight=0.3)
+##    grader.add_test_group("Negative Numbers", [test_negative_add], weight=0.3)
+##    grader.add_test_group("Edge Cases", [test_edge_cases], weight=0.4)
+##    
+##    # Chấm điểm
+##    result = grader.grade()
+##    print(grader.generate_report(result))
+##

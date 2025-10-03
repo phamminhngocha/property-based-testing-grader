@@ -122,31 +122,31 @@ class BasicGrader:
             }
         }
 
-
-# Ví dụ sử dụng
-if __name__ == "__main__":
-    # Định nghĩa test cases
-    test_cases = [
-        {
-            'function': 'add',
-            'inputs': [2, 3],
-            'expected': 5
-        },
-        {
-            'function': 'add',
-            'inputs': [0, 0],
-            'expected': 0
-        },
-        {
-            'function': 'add',
-            'inputs': [-1, 1],
-            'expected': 0
-        }
-    ]
-    
-    # Chấm điểm
-    grader = BasicGrader("student_code.py")
-    result = grader.grade(test_cases)
-    
-    print(f"Điểm: {result['score']}/{result['max_score']}")
-    print(f"Test passed: {result['passed']}/{result['total']}")
+### Thử nghiệm
+##if __name__ == "__main__":
+##    # Định nghĩa test cases
+##    test_cases = [
+##        {
+##            'function': 'add',
+##            'inputs': [2, 3],
+##            'expected': 5
+##        },
+##        {
+##            'function': 'add',
+##            'inputs': [0, 0],
+##            'expected': 0
+##        },
+##        {
+##            'function': 'add',
+##            'inputs': [-1, 1],
+##            'expected': 0
+##        }
+##    ]
+##    
+##    # Chấm điểm
+##    grader = BasicGrader("student_code.py")
+##    result = grader.grade(test_cases)
+##    
+##    print(f"Điểm: {result['score']}/{result['max_score']}")
+##    print(f"Test passed: {result['passed']}/{result['total']}")
+##

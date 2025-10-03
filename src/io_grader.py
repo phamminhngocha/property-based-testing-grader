@@ -183,23 +183,24 @@ class IOGrader:
         return "\n".join(report)
 
 
-# Ví dụ sử dụng
-if __name__ == "__main__":
-    test_cases = [
-        {
-            'input': "5\n3\n",
-            'expected': "8\n"
-        },
-        {
-            'input': "10\n-2\n",
-            'expected': "8\n"
-        },
-        {
-            'input': "0\n0\n",
-            'expected': "0\n"
-        }
-    ]
-    
-    grader = IOGrader("student_io_program.py")
-    result = grader.grade(test_cases)
-    print(grader.generate_report(result))
+### Thử nghiệm
+##if __name__ == "__main__":
+##    test_cases = [
+##        {
+##            'input': "5\n3\n",
+##            'expected': "8\n"
+##        },
+##        {
+##            'input': "10\n-2\n",
+##            'expected': "8\n"
+##        },
+##        {
+##            'input': "0\n0\n",
+##            'expected': "0\n"
+##        }
+##    ]
+##    
+##    grader = IOGrader("student_io_program.py")
+##    result = grader.grade(test_cases)
+##    print(grader.generate_report(result))
+##
