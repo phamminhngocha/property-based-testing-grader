@@ -1,0 +1,78 @@
+# .coveragerc - Coverage configuration file
+# Chức năng: Cấu hình chi tiết cho coverage.py
+# Định nghĩa cách tính và báo cáo code coverage
+
+[run]
+# Source packages/modules để track coverage
+source = src
+
+# Các file/folder bỏ qua
+omit =
+    */tests/*
+    */test_*.py
+    */__pycache__/*
+    */venv/*
+    */env/*
+    */site-packages/*
+    setup.py
+
+# Branch coverage (đo cả các nhánh if/else)
+branch = True
+
+# Parallel mode cho multiprocessing
+parallel = False
+
+# Data file location
+data_file = .coverage
+
+[report]
+# Precision của phần trăm
+precision = 2
+
+# Hiển thị dòng code bị miss
+show_missing = True
+
+# Bỏ qua các file đã có 100% coverage
+skip_covered = False
+
+# Fail nếu coverage dưới ngưỡng
+fail_under = 85
+
+# Exclude patterns (regex)
+exclude_lines =
+    # Standard pragma
+    pragma: no cover
+    
+    # Debug-only code
+    def __repr__
+    
+    # Non-runnable code
+    if __name__ == .__main__.:
+    
+    # Abstract methods
+    @abstractmethod
+    @abc.abstractmethod
+    
+    # Type checking only
+    if TYPE_CHECKING:
+    
+    # Defensive programming
+    raise AssertionError
+    raise NotImplementedError
+    
+    # Debugging
+    pass
+    
+    # Cannot cover
+    except ImportError:
+
+[html]
+# Thư mục output cho HTML report
+directory = htmlcov
+
+# HTML title
+title = Python Auto Grader Coverage Report
+
+[xml]
+# Output file cho XML report (dùng cho CI/CD)
+output = coverage.xml
